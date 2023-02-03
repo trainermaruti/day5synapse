@@ -2,7 +2,7 @@
 	"name": "SQL script 1",
 	"properties": {
 		"content": {
-			"query": "CREATE TABLE dbo.VehicleAverages\n( \n    [AverageEngineTemperature] [float] NOT  NULL,\n    [AverageSpeed] [float] NOT  NULL,\n    [Snapshot] [datetime] NOT  NULL\n)\nWITH\n(\n    DISTRIBUTION = ROUND_ROBIN,\n    CLUSTERED COLUMNSTORE INDEX\n)\n\nSELECT * from dbo.VehicleAverages",
+			"query": "CREATE TABLE dbo.VehicleAverages\n( \n    [AverageEngineTemperature] [float] NOT  NULL,\n    [AverageSpeed] [float] NOT  NULL,\n    [Snapshot] [datetime] NOT  NULL\n)\nWITH\n(\n    DISTRIBUTION = ROUND_ROBIN,\n    CLUSTERED COLUMNSTORE INDEX\n)\n\nSELECT * from dbo.VehicleAverages\n\nSELECT * from dbo.VehicleAverages\n\nSELECT * from dbo.VehicleAverages",
 			"metadata": {
 				"language": "sql"
 			},
