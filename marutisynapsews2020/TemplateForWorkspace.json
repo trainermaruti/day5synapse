@@ -99,7 +99,7 @@
 			"apiVersion": "2019-06-01-preview",
 			"properties": {
 				"content": {
-					"query": "CREATE TABLE dbo.VehicleAverages\n( \n    [AverageEngineTemperature] [float] NOT  NULL,\n    [AverageSpeed] [float] NOT  NULL,\n    [Snapshot] [datetime] NOT  NULL\n)\nWITH\n(\n    DISTRIBUTION = ROUND_ROBIN,\n    CLUSTERED COLUMNSTORE INDEX\n)\n\nSELECT * from dbo.VehicleAverages",
+					"query": "CREATE TABLE dbo.VehicleAverages\n( \n    [AverageEngineTemperature] [float] NOT  NULL,\n    [AverageSpeed] [float] NOT  NULL,\n    [Snapshot] [datetime] NOT  NULL\n)\nWITH\n(\n    DISTRIBUTION = ROUND_ROBIN,\n    CLUSTERED COLUMNSTORE INDEX\n)\n\nSELECT * from dbo.VehicleAverages\n\nSELECT * from dbo.VehicleAverages\n\nSELECT * from dbo.VehicleAverages",
 					"metadata": {
 						"language": "sql"
 					},
@@ -130,7 +130,7 @@
 						"spark.dynamicAllocation.enabled": "false",
 						"spark.dynamicAllocation.minExecutors": "2",
 						"spark.dynamicAllocation.maxExecutors": "2",
-						"spark.autotune.trackingId": "ff678633-b48b-41b3-ad8e-23acecec9365"
+						"spark.autotune.trackingId": "52af31f4-9c9b-4d73-831d-431d091e60fe"
 					}
 				},
 				"metadata": {
@@ -148,7 +148,6 @@
 				"cells": [
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"# Creating a managed Spark table\n",
 							"This notebook describes how to create a managed table from Spark. \n",
@@ -218,7 +217,6 @@
 					},
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"Insert a few rows into the table using a list of values.\n",
 							""
@@ -255,7 +253,6 @@
 					},
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"* Retrieve values back. Click on 'Chart' below to review the visualization.\n",
 							""
@@ -296,7 +293,6 @@
 					},
 					{
 						"cell_type": "markdown",
-						"metadata": {},
 						"source": [
 							"Drop the table. Please note the data will get deleted from the primary storage account associated with this workspace.\n",
 							""
